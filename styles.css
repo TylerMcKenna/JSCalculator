@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(152, 152, 219);
+    padding: 10px 0px;
+    border: 0px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.calculatorContainer {
+    margin: 10px auto;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+#allClear,
+#equals {
+    flex: 2;
+}
