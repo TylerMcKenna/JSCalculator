@@ -6,39 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="initialize()">
     <div class="calculatorContainer">
-        <div class="row screen">
-            123+9
-        </div>
-        <div class="row row1">
+        <div class="row" id="screen"></div>
+        <div class="row" id="row1">
             <button id="allClear">AC</button>
-            <button id="plusMinus">+/-</button>
+            <button id="plusMinus" onclick="changeSign()">+/-</button>
             <button id="divide">/</button>
         </div>
-        <div class="row row2">
+        <div class="row" id="row2">
             <button id="seven">7</button>
             <button id="eight">8</button>
             <button id="nine">9</button>
             <button id="multiply">*</button>
         </div>
-        <div class="row row3">
+        <div class="row" id="row3">
             <button id="four">4</button>
             <button id="five">5</button>
             <button id="six">6</button>
             <button id="minus">-</button>
         </div>
-        <div class="row row4">
+        <div class="row" id="row4">
             <button id="one">1</button>
             <button id="two">2</button>
             <button id="three">3</button>
             <button id="plus">+</button>
         </div>
-        <div class="row row5">
+        <div class="row" id="row5">
             <button id="decimalPoint">.</button>
             <button id="zero">0</button>
             <button id="equals">=</button>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>

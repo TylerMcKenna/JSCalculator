@@ -22,7 +22,7 @@ button {
     width: 10rem;
 }
 
-.screen {
+#screen {
     display: flex;
     background-color: rgb(75, 75, 163);
     border-radius: 10px;
