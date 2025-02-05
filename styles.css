@@ -1,4 +1,5 @@
 body{
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     box-sizing: border-box;
 }
@@ -12,14 +13,31 @@ button {
 }
 
 .calculatorContainer {
-    margin: 10px auto;
-    width: 10rem;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(196, 196, 227);
     display: flex;
     flex-direction: column;
+    margin: 10px auto;
+    width: 10rem;
+}
+
+.screen {
+    display: flex;
+    background-color: rgb(75, 75, 163);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
 }
 
 .row {
     display: flex;
+}
+
+.calculatorContainer,
+.row {
+    gap: 7px;
 }
 
 #allClear,
