@@ -11,7 +11,7 @@
         <div class="row" id="screen"></div>
         <div class="row" id="row1">
             <button id="allClear" onclick="initialize()">AC</button>
-            <button id="plusMinus" onclick="changeSign()">+/-</button>
+            <button id="darkLight" onclick="changeColorScheme()">D/L</button>
             <button id="divide" onclick="operatorPressed(this)">/</button>
         </div>
         <div class="row" id="row2">
@@ -33,7 +33,7 @@
             <button id="plus" onclick="operatorPressed(this)">+</button>
         </div>
         <div class="row" id="row5">
-            <button id="decimalPoint">.</button>
+            <button id="decimalPoint" onclick="dotPressed()">.</button>
             <button id="zero" onclick="numberPressed(this)">0</button>
             <button id="equals" onclick="operatorPressed(this)">=</button>
         </div>
