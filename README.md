@@ -1,5 +1,5 @@
 # JSCalculator
-## Javascript calculator made for my web development class.
+Javascript calculator made for my web development class.
 
 ## Known errors:
     -Numbers will not always round 100% accurately
