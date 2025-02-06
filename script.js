@@ -21,7 +21,6 @@ function numberPressed(numButton) {
     }
 }
 
-// Still don't prevent nu
 function dotPressed() {
     // Prevents entering decimal point if = was just pressed
     // and repeat and multiple decimals
@@ -51,6 +50,10 @@ function operatorPressed(operatorButton) {
             screen.innerText = lhs;
         }
     }
+}
+
+function changeColorScheme() {
+    document.body.classList.toggle("lightMode")
 }
 
 /*

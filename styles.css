@@ -1,11 +1,26 @@
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     box-sizing: border-box;
+    background-color: black;
+    --primaryBackground: rgb(53, 53, 127);
+    --buttonBackground: rgb(139, 139, 203);
+    --buttonBackgroundHover: rgb(170, 170, 213);
+    --screenBackground: rgb(151, 151, 207);
+    color: white;
+}
+
+.lightMode {
+    background-color: white;
+    --primaryBackground: rgb(196, 196, 227);
+    --buttonBackground: rgb(152, 152, 219);
+    --buttonBackgroundHover: rgb(139, 139, 210);
+    --screenBackground: rgb(75, 75, 163);
+    color: black;
 }
 
 button {
-    background-color: rgb(152, 152, 219);
+    background-color: var(--buttonBackground);
     padding: 10px 0px;
     border: 0px;
     border-radius: 10px;
@@ -14,13 +29,13 @@ button {
 }
 
 button:hover {
-    background-color: rgb(139, 139, 210);
+    background-color: var(--buttonBackgroundHover);
 }
 
 .calculatorContainer {
     padding: 15px;
     border-radius: 20px;
-    background-color: rgb(196, 196, 227);
+    background-color: var(--primaryBackground);
     display: flex;
     flex-direction: column;
     margin: 10px auto;
@@ -29,7 +44,7 @@ button:hover {
 
 #screen {
     display: flex;
-    background-color: rgb(75, 75, 163);
+    background-color: var(--screenBackground);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 10px;
@@ -48,4 +63,8 @@ button:hover {
 #allClear,
 #equals {
     flex: 2;
+}
+
+#colorScheme {
+    font-size: 10px;
 }
