@@ -52,8 +52,13 @@ function operatorPressed(operatorButton) {
     }
 }
 
-function changeColorScheme() {
+function changeColorScheme(modeButton) {
     document.body.classList.toggle("lightMode")
+    if(modeButton.innerText === "Dark") {
+        modeButton.innerText = "Light"
+    } else {
+        modeButton.innerText = "Dark"
+    }
 }
 
 /*
