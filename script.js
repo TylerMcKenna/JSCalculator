@@ -1,6 +1,7 @@
 let screen = document.getElementById("screen");
 // lhs rhs = left right hand side
 let sign, lhs, rhs, operator;
+// ctrl d all the reused stuff into variables
 
 function initialize() {
     document.getElementById("screen").innerText = "";
